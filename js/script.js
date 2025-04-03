@@ -20,12 +20,8 @@ const generateMails = (num) => {
 
             // appendo il nuovo elemento creato alla lista come figlio
             lista.appendChild(li)
-
         })
-
     }
-
-
 }
 
 // creo una variabile numerica per far generare n mail
