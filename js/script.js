@@ -6,9 +6,12 @@ const generateMails = () => {
     // creo l'elemento 
     const li = document.createElement('li')
 
+    // appendo la mail generata all'elemento creato
     li.append('test@mail.com')
 
+    // appendo il nuovo elemento creato alla lista come figlio
     lista.appendChild(li)
 }
 
+// richiamo la funzione
 generateMails()
