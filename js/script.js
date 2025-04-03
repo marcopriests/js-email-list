@@ -15,3 +15,8 @@ const generateMails = () => {
 
 // richiamo la funzione
 generateMails()
+
+// effettuo la chiamata ajax
+axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((resp) => {
+    console.log(resp.data.response)
+})
