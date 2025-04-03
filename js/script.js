@@ -16,7 +16,15 @@ const generateMails = () => {
 // richiamo la funzione
 generateMails()
 
-// effettuo la chiamata ajax
-axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((resp) => {
-    console.log(resp.data.response)
-})
+// creo una variabile numerica per far generare n mail
+const mailNum = 10
+
+// creo un ciclo che effettui la chiamata ajax per tante volte quante inserite nella variabile mailNum
+for (let i = 0; i <= mailNum; i++) {
+
+    // effettuo la chiamata ajax
+    axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((resp) => {
+        console.log(resp.data.response)
+    })
+
+}
